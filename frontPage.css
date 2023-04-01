@@ -11,7 +11,6 @@ body {
     overflow: hidden;
 }
 img {
-    user-drag: none; 
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
@@ -72,13 +71,12 @@ img {
     border-width: 0px;
     border-style: solid;
     border-color: none;
-    transform: translate(50vw,50vh);
+    
     z-index: 100;
 }
 .levelOne:hover > .popBox{
     display: flex;
-}
-
+} 
 
 .sand {
     z-index: 24;
