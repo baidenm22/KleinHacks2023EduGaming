@@ -21,8 +21,8 @@ body {
 .ground {
     position: absolute;
     bottom: 0px;
-    width: 100vw;
-    height: 50vh;
+    width:1000px;
+    left: 0px;
     background-color: tan;
     z-index: -20;
     
@@ -50,6 +50,40 @@ body {
 .popBoxText {
     flex: 1;
 }
+.levelOne {
+    height:50px;
+    width:50px;
+    background-color: rgba(195, 9, 6, 0.162);
+    position: absolute;
+    top:0;
+    border-radius: 50px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: none;
+}
 .levelOne:hover > .popBox{
     display: flex;
+}
+
+
+.vinegtee{
+    z-index: 25;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: radial-gradient(circle,rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,1));
+}
+
+.sand {
+    border-radius: 4px;
+    border-width: 4px;
+    border-color: rgb(134, 90, 36);
+    animation: sandBlow 10s none;
+}
+@keyframes sandBlow {
+    0% {
+        left: 0
+        t
+    }
+    
 }
