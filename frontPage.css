@@ -17,11 +17,12 @@ body {
     */
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 .ground {
     position: absolute;
     bottom: 0px;
-    width:1000px;
+    width:1100px;
     left: 0px;
     background-color: tan;
     z-index: -20;
@@ -75,18 +76,22 @@ body {
 }
 
 .sand {
+    z-index: 24;
     position: absolute;
-    border-radius: 4px;
-    border-width: 4px;
-    border-color: rgb(134, 90, 36);
-    animation: sandBlow 10s infinite linear;
+    border-radius: 2px;
+    border-width: 2px;
+    width: 1px;
+    height: 1px;
+    border-color: rgb(217, 148, 63);
+    border-style: solid;
+    animation: sandBlow 1s infinite linear;
 }
 @keyframes sandBlow {
     0% {
         transform: translate(0,0);
     }
     100% {
-       transform: translate(100%,0);
+       transform: translate(100vw,0);
     }
     
 }
