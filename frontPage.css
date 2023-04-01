@@ -10,6 +10,14 @@ body {
     position: relative;
     overflow: hidden;
 }
+img {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
 .fullBody {
     height: 100vh;
     width: 100vw;
@@ -31,10 +39,11 @@ body {
 
 
 .popBox {
-    top: 50px;
+    top: -50px;
+    left:60px;
     position: absolute;
     display: none; 
-    width: 300px;
+    width: 250px;
     border-radius: 5px;
     border-color: rgb(156, 126, 81);
     border-width: 3px;
@@ -47,33 +56,29 @@ body {
     font-size: 24px;
     height: 25px;
     background-color: rgb(156, 126, 81);
+    padding: 2px
 }
 .popBoxText {
     flex: 1;
+    padding: 2px
 }
 .levelOne {
     height:50px;
     width:50px;
-    background-color: rgba(195, 9, 6, 0.162);
+    background-color: rgba(195, 9, 6, 0.5);
     position: absolute;
     top:0;
     border-radius: 50px;
     border-width: 0px;
     border-style: solid;
     border-color: none;
+    transform: translate(50vw,50vh);
+    z-index: 100;
 }
 .levelOne:hover > .popBox{
     display: flex;
 }
 
-
-.vinegtee{
-    z-index: 25;
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    background-image: radial-gradient(circle,rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,1));
-}
 
 .sand {
     z-index: 24;
