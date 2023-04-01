@@ -24,6 +24,7 @@ body {
     width: 100vw;
     height: 50vh;
     background-color: tan;
+    z-index: -20;
     
 }
 
@@ -48,9 +49,6 @@ body {
 }
 .popBoxText {
     flex: 1;
-}
-.levelOne {
-    display: block;
 }
 .levelOne:hover > .popBox{
     display: flex;
