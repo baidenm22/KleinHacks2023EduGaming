@@ -75,15 +75,18 @@ body {
 }
 
 .sand {
+    position: absolute;
     border-radius: 4px;
     border-width: 4px;
     border-color: rgb(134, 90, 36);
-    animation: sandBlow 10s none;
+    animation: sandBlow 10s infinite linear;
 }
 @keyframes sandBlow {
     0% {
-        left: 0
-        t
+        transform: translate(0,0);
+    }
+    100% {
+       transform: translate(100%,0);
     }
     
 }
