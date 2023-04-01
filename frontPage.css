@@ -17,6 +17,9 @@ img {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+a {
+    color: black;
+}
 .fullBody {
     height: 100vh;
     width: 100vw;
