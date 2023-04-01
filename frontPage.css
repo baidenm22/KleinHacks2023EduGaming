@@ -11,9 +11,46 @@ body {
     overflow: hidden;
 }
 .fullBody {
-    position: absolute;
     height: 100vh;
     width: 100vw;
-    background-image: radial-gradient(circle, rgb(192, 21, 50), rgb(189, 13, 121), rgb(145, 11, 138),rgb(41, 4, 47) );
+    /*background-image: radial-gradient(circle, rgb(192, 21, 50) 25%, rgb(189, 13, 121), rgb(145, 11, 138),rgb(41, 4, 47) );
+    */
+    display: flex;
+    flex-direction: row;
+}
+.ground {
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    height: 50vh;
+    background-color: black;
+}
 
+
+.popBox {
+    top: 50px;
+    position: absolute;
+    display: none; 
+    width: 300px;
+    border-radius: 5px;
+    border-color: rgb(156, 126, 81);
+    border-width: 3px;
+    border-style: solid;
+    background-color: blanchedalmond;
+    flex-direction: column;
+    transition: display 2s;
+}
+.popBoxTitle {
+    font-size: 24px;
+    height: 25px;
+    background-color: rgb(156, 126, 81);
+}
+.popBoxText {
+    flex: 1;
+}
+.levelOne {
+    display: block;
+}
+.levelOne:hover > .popBox{
+    display: flex;
 }
