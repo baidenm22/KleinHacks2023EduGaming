@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="levelOne.css">
+  <head>
     <title>Scavenger Hunt</title>
-<body>
+    <link rel="stylesheet" href="levelFour.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/javascript" src="levelFour.js"></script>
+  </head>
+  <body>
     <div class="fullBody">
-        <div style="flex: 5"></div>
-        <img src="Question1.jpg" alt="first Problem" style="width:500px;z-index:20;position: absolute;left: 475px; bottom: 400px">
-        
-        <div class="missionReport">
-            <div class="missionTitle">Limits</div> 
-            <br>
-            USE THIS LIMITS TO BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
+      <div style="flex: 5"></div>
+      <img src="../Limiting Lesion.jpg" alt="first Problem">
+      <div class="missionReport">
+        <div class="missionTitle">Differential Equations</div> 
+        <br>
+        You discover an artifact next to a pressure plate that claims that the secret will be revealed by placing the 
+        artifact on the pressure plate, but you realize this artifact has been created with partial amounts of 
+        radioactive materials, after some measurements you find the current weight to be 134.065 grams, the artifact will 
+        not weight nearly as much as it did 2000 years ago.  you find the rate of decay equation to be 
+        $$\frac{dw}{dt}=-0.02w$$ where t is measured in hundreds of years, and w is the weight of the artifact. 
+        how much weight do we add to the artifact to make sure the pressure make activates with the right force.
 
-        </div>
-        <div style="flex: 1"></div>
+        <br>
+        <label for="myInput">Enter the weight added to the artifact to the nearest thousandth:</label>
+        <br>
+        <input type="text" id="myInput">
+        <button class="submit" type="button" onclick="checkValue()">Submit</button>
+        <p id="result"></p>
+      </div>
+      <div style="flex: 1"></div>
     </div>
     <a href="/frontPage.html" class="mainMenu">Return</a>
     <script src="levelOne.js"></script>
-</body>
+    <a href="../Info/Info.html">
+      <button class="handbook"><b>Handbook</b></button>
+    </a>
+  </body>
 </html>
