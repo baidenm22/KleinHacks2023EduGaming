@@ -17,3 +17,9 @@ body {
     background-image: radial-gradient(circle, rgb(192, 21, 50), rgb(189, 13, 121), rgb(145, 11, 138),rgb(41, 4, 47) );
 
 }
+.tablink{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  Luis sucks
