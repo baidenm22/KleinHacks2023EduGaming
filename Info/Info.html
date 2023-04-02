@@ -47,7 +47,7 @@
 </div>
 
 <div id="Derivatives" class="tabcontent">
-  <h3>News</h3>
+  <h1>Derivatives</h1>
   <p>Derivatives are a fundamental concept in calculus and are used to study the rate at which functions change. In calculus, the derivative of a function represents its instantaneous rate of change at a given point.</p>
 <p>The derivative of a function <i>f(x)</i> at a point <i>x</i> is defined as:</p>
 <p style="text-align:center;"><i>$$f'(x) = \lim_{h\to 0} \frac{f(x+h)-f(x)}{h}$$
@@ -60,14 +60,17 @@
 <p>First, we need to compute the difference quotient:</p>
 <p style="text-align:center;">$$\frac{f(x+h)-f(x)}{h} = \frac{(2(x+h)+1)-(2x+1)}{h} = \frac{2h}{h} = 2$$</p>
 <p>Next, we take the limit of the difference quotient as <i>h &rarr; 0</i>:</p>
-<p style="text-align:center;">f'(x) = lim[h &rarr; 0] [(f(x + h) - f(x))/h] = 2</p>
+<p style="text-align:center;">$$f'(x) = \lim_{h\to 0} \frac{f(x+h)-f(x)}{h} = 2$$
+</p>
 <p>Therefore, the derivative of <i>f(x) = 2x + 1</i> at the point <i>x = 3</i> is <i>f'(3) = 2</i>.</p>
 <h4>Example 2: Finding the Derivative of a Quadratic Function</h4>
 <p>Let's find the derivative of the function <i>f(x) = x<sup>2</sup> - 3x + 2</i> at the point <i>x = 2</i>.</p>
 <p>First, we need to compute the difference quotient:</p>
-<p style="text-align:center;">(f(x + h) - f(x))/h = [((x + h)<sup>2</sup> - 3(x + h) + 2) - (x<sup>2</sup> - 3x + 2)]/h = (2xh + h<sup>2</sup> - 3h)/h = 2x - 3 + h</p>
+<p style="text-align:center;">$$\frac{f(x+h)-f(x)}{h} = \frac{((x+h)^2 - 3(x+h) + 2) - (x^2 - 3x + 2)}{h} = \frac{2xh + h^2 - 3h}{h} = 2x - 3 + h$$
+</p>
 <p>Next, we take the limit of the difference quotient as <i>h &rarr; 0</i>:</p>
-<p style="text-align:center;">f'(x) = lim[h &rarr; 0] [(f(x + h) - f(x))/h] = 2x - 3</p>
+<p style="text-align:center;">$$f'(x) = \lim_{h\to 0} \frac{f(x+h)-f(x)}{h} = 2x - 3$$
+</p>
 <p>Therefore, the derivative of <i>f(x) = x<sup>2</sup> - 3x + 2</i> at the point <i>x = 2</i> is <i>f'(2) = 1</i>.</p>
 <h3>Real-World Applications of Derivatives</h3>
 <p>Derivatives are used in many fields, including physics, engineering, economics, 
@@ -89,13 +92,31 @@
    the option value to changes in these variables, which helps investors manage risk and optimize their investments.</p>
 <p>Derivatives are a powerful tool in calculus and are used to analyze rates of change and optimize various problems in many 
   different fields. Understanding derivatives is essential for students of calculus and for professionals in fields that use calculus.</p>
+  <h3>Optimization Example: Maximizing Area</h3>
+<p>Let's consider an optimization problem where we want to find the dimensions of a rectangle with a fixed perimeter that maximizes its area. The perimeter of a rectangle with length l and width w is:</p>
+<p><center>$$P = 2l + 2w$$</center></p>
+<p>Since the perimeter is fixed, we can write:</p>
+<p><center>$$2l + 2w = P \Rightarrow l + w = \frac{P}{2}$$</center></p>
+<p>The area of a rectangle with length l and width w is:</p>
+<p><center>$$A = lw$$</center></p>
+<p>To find the dimensions of the rectangle that maximizes its area, we need to find the values of l and w that satisfy the constraint l + w = P/2 and maximize the area A.</p>
+<p>Using the constraint, we can write:</p>
+<p><center>$$l = \frac{P}{2} - w$$</center></p>
+<p>Substituting this expression for l into the area formula, we get:</p>
+<p><center>$$A = w\left(\frac{P}{2} - w\right) = \frac{Pw}{2} - w^2$$</center></p>
+<p>To find the value of w that maximizes the area A, we need to take the derivative of the area function with respect to w and set it equal to zero:</p>
+<p><center>$$\frac{dA}{dw} = \frac{P}{2} - 2w = 0$$</center></p>
+<p>Solving for w, we get:</p>
+<p><center>$$w = \frac{P}{4}$$</center></p>
+<p>Substituting this value for w back into the constraint equation, we get:</p>
+<p><center>$$l = \frac{P}{4}$$</center></p>
+<p>Therefore, the dimensions of the rectangle that maximizes its area with a fixed perimeter are l = P/4 and w = P/4.</p>
   <button class="backbutt" onclick="history.back()">Go Back</button>
 
 </div>
 
 <div id="Integrals" class="tabcontent">
-  <h3>Contact</h3>
-  <p>Get in touch, or swing by for a cup of coffee.</p>
+  <h1>Integrals</h1>
   <button class="backbutt" onclick="history.back()">Go Back</button>
 
 </div>
