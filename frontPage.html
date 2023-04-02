@@ -14,31 +14,30 @@
             <img src="Dunes.svg" class="ground">
             <img src="sun.svg" style="position: absolute;width: 300px; transform: translate(180px,450px);z-index: 1;">
             
-            <a href="Level1/levelOne.html" class="levelOne" style="transform: translate(950px,600px);">
+            <a href="Level4/levelFour.html" class="levelOne" style="transform: translate(950px,600px);">
                 <div class="popBox">
-                    <div class="popBoxTitle">Level One</div>
-                    <div class="popBoxText">Integrals is the best kind of math that a person can particapte in </div>
+                    <div class="popBoxTitle">4.Differentials</div>
+                    <div class="popBoxText">This artifact is glowing and seems to have lost some mass over the years...</div>
                 </div>
             </a>
             
-            <a href="Level1/levelOne.html" class="levelOne" style="transform: translate(850px,450px);">
+            <a href="Level3/levelThree.html" class="levelOne" style="transform: translate(850px,450px);">
                 <div class="popBox">
-                    <div class="popBoxTitle">Level Two</div>
-                    <div class="popBoxText">Integrals is the best kind of math that a person can particapte in </div>
+                    <div class="popBoxTitle">3.Integrals</div>
+                    <div class="popBoxText">Inside the skull lies a new artifact, only one of a pair</div>
                 </div>
             </a>
-
-            <a href="Level1/levelOne.html" class="levelOne" style="transform: translate(630px,600px);">
+            <a href="Level2/levelTwo.html" class="levelOne" style="transform: translate(630px,600px);">
                 <div class="popBox">
-                    <div class="popBoxTitle">Level Three</div>
-                    <div class="popBoxText">Integrals is the best kind of math that a person can particapte in </div>
+                    <div class="popBoxTitle">2.Derivatives</div>
+                    <div class="popBoxText">A strange piece of wood and a pattern on the wall?</div>
                 </div>
             </a>
 
             <a href="Level1/levelOne.html" class="levelOne" style="transform: translate(140px,420px);">
                 <div class="popBox">
-                    <div class="popBoxTitle">Level Four</div>
-                    <div class="popBoxText">Integrals is the best kind of math that a person can particapte in </div>
+                    <div class="popBoxTitle">1.Limits</div>
+                    <div class="popBoxText">This artifact was found submerged in water, and only through fire may you find its secret</div>
                 </div>
             </a>
             <a href="Info/Info.html">
@@ -59,10 +58,9 @@
                     <br><br> Agent, we sent you out to try to find this hidden treasure. We understand you may be new to this field of work,
                     but don't worry. If you ever need help just refer to our handbook for important tips!
                     <br><br>
-                    Once you solve all the puzzles you should get a code that will unlock the golden bell's location
+                    Combining the codes on each artifact onto the tablet will unlock the location of the gold
                     <br>
                     <br>
-
                     Good luck out there,
                     <br> Calc. Hunters. 
 
@@ -73,15 +71,21 @@
             <div style="height:200px;padding: 20px; display: flex;background-color: gray;justify-content: center;">
                 <div><label style="font-size: 1.7vw;">Tablet's Encoded Message</label>
                     <br><br>
-                    <div style="display:flex; ">
-                        <div> X C V F</div><div style="width:20px"></div> 
-                        <input type="text" id="answerSpace" style="background-color: gray;"><div style="width:20px"></div>
-                        <button type="button" id="answerButton" style="background-color: gray;"">Submit</button>
-                    </div>
-                    <br>
+                    
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <div style="display:flex; ">
+                          <div>ARTIFACT CODE:</div><div style="width:20px"></div> 
+                          <label for="inputField"></label>
+                          <input type="text" id="inputField">
+                          <button class="submit" onclick="checkString()">Submit</button>
+                        </div>
+                        <br>
+                        <div id="result"></div>
+                      </div>
+                      
 
                     <div id="Correct" style="font-size:1.4vw;color: green; display: none;">Correct</div>
-                    <div id="Incorrect" style="font-size:1.4vw;color: rgb(199, 15, 15);  display: none;">Incorrect</div>
+                    <div id="Incorrect" style="font-size:1.4vw;color: rgb(199, 15, 14);  display: none;">Incorrect</div>
                 </div>
                
             </div>

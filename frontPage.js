@@ -13,15 +13,11 @@ function randomLocation()
     this.style.left = 0;
 }
 
-document.getElementById("answerButton").onclick = function() {
-
-    var answer = document.getElementById("answerSpace").value;
-    if(answer == 30)
-    {
-     document.getElementById("Correct").style.display = "block"; 
-     document.getElementById("Incorrect").style.display = "none";   
-    }  else {
-        document.getElementById("Correct").style.display = "none";   
-        document.getElementById("Incorrect").style.display = "block";   
+function checkString() {
+    const input = document.getElementById("inputField").value;
+    if (input === "CuS4CkdAG04T") {
+      document.getElementById("result").innerHTML = "Correct!";
+    } else {
+      document.getElementById("result").innerHTML = "Incorrect!";
     }
-}
+  }

@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="levelOne.css">
+  <head>
     <title>Scavenger Hunt</title>
-<body>
+    <link rel="stylesheet" href="levelOne.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/javascript" src="levelOne.js"></script>
+  </head>
+  <body>
     <div class="fullBody">
-        <div style="flex: 5"></div>
-        <img src="Question1.jpg" alt="first Problem" style="width:500px;z-index:20;position: absolute;left: 475px; bottom: 400px">
-        
-        <div class="missionReport">
-            <div class="missionTitle">Limits</div> 
-            <br>
-            USE THIS LIMITS TO BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-
-        </div>
-        <div style="flex: 1"></div>
+      <div style="flex: 5"></div>
+      <img src="../Limiting Lesion.jpg" alt="first Problem">
+      <div class="missionReport">
+        <div class="missionTitle">Limits</div> 
+        <br>
+        This artifact seems to have been submerged in water
+        for the past 2000 years. In order to remove the moisture
+        from the artifact we need to heat it up to evaporate the water.
+        The equation $$W=-\frac{10}{1+e^{-0.1t}}+20$$ can be used to 
+        show the weight in grams after t minutes. Use a limit to infinity
+        to determine the final mass of the artifact after heating.
+        <br>
+        <label for="myInput">Enter your answer:</label>
+        <br>
+        <input type="text" id="myInput">
+        <button class="submit" type="button" onclick="checkValue()">Submit</button>
+        <p id="result"></p>
+      </div>
+      <div style="flex: 1"></div>
     </div>
     <a href="/frontPage.html" class="mainMenu">Return</a>
     <script src="levelOne.js"></script>
-</body>
+    <a href="../Info/Info.html">
+      <button class="handbook"><b>Handbook</b></button>
+    </a>
+  </body>
 </html>

@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="levelOne.css">
+  <head>
     <title>Scavenger Hunt</title>
-<body>
+    <link rel="stylesheet" href="levelTwo.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/javascript" src="levelTwo.js"></script>
+  </head>
+  <body>
     <div class="fullBody">
-        <div style="flex: 5"></div>
-        <img src="Question1.jpg" alt="first Problem" style="width:500px;z-index:20;position: absolute;left: 475px; bottom: 400px">
-        
-        <div class="missionReport">
-            <div class="missionTitle">Limits</div> 
-            <br>
-            USE THIS LIMITS TO BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
+      <div style="flex: 5"></div>
+      <img src="../Limiting Lesion.jpg" alt="first Problem">
+      <div class="missionReport">
+        <div class="missionTitle">Derivatives</div> 
+        <br>
+        Buried in the sand is a large flat piece of stone thats 30in by 50in with seemingly random marks along it, 
+        on the wall is a symbol of an open box, cut and piece together the box with the greatest volume using the pattern to the right<br>
 
-        </div>
-        <div style="flex: 1"></div>
+        <label for="myInput">Enter your volume to the nearest hundredth:</label>
+        <br>
+        <input type="text" id="myInput">
+        <button class="submit" type="button" onclick="checkValue()">Submit</button>
+        <p id="result"></p>
+      </div>
+      <div style="flex: 1"></div>
     </div>
     <a href="/frontPage.html" class="mainMenu">Return</a>
     <script src="levelOne.js"></script>
-</body>
+    <a href="../Info/Info.html">
+      <button class="handbook"><b>Handbook</b></button>
+    </a>
+    <img id="pattern" src="pattern.png" alt="pattern">
+    <style>
+    #pattern {
+  position: fixed;
+  top: 50%;
+  right: 150px;
+  transform: scale(140%);
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+}
+        
+      
+    </style>
+  </body>
 </html>

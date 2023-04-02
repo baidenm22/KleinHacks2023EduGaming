@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="levelOne.css">
+  <head>
     <title>Scavenger Hunt</title>
-<body>
+    <link rel="stylesheet" href="levelThree.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/javascript" src="levelThree.js"></script>
+  </head>
+  <body>
     <div class="fullBody">
-        <div style="flex: 5"></div>
-        <img src="Question1.jpg" alt="first Problem" style="width:500px;z-index:20;position: absolute;left: 475px; bottom: 400px">
-        
-        <div class="missionReport">
-            <div class="missionTitle">Limits</div> 
-            <br>
-            USE THIS LIMITS TO BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH 
-
-        </div>
-        <div style="flex: 1"></div>
+      <div style="flex: 5"></div>
+      <img src="../Artifact.jpg" alt="first Problem">
+      <div class="missionReport">
+        <div class="missionTitle">Integrals</div> 
+        <br>
+        Hidden in a nook of the skull lies an artifact and two slots in the skull, both of 
+        which seem like perfect fits for the cup. you deduce that the skull wants you to make a replica
+        of the artifact using a near by stash of clay. Although the shape of the cup is unusual, it can be
+        replicated by the graphs $$f(x)=-\frac{1}{10}\left(x+2.4\right)^{2}+6.6$$
+        $$g(x) =\frac{1}{10}\left(6-x\right)^{2}+1$$
+        when 0 &lt; x &lt; 10, these graphs can be seen to the right. Note that because we just need outer contour
+        for the replica, the cup does not need to be hollow. 
+        <br>
+        <label for="myInput">Enter the volume of the clay needed to make the replica to the nearest thousandth:</label>
+        <br>
+        <input type="text" id="myInput">
+        <button class="submit" type="button" onclick="checkValue()">Submit</button>
+        <p id="result"></p>
+      </div>
+      <div style="flex: 1"></div>
     </div>
     <a href="/frontPage.html" class="mainMenu">Return</a>
     <script src="levelOne.js"></script>
-</body>
+    <a href="../Info/Info.html">
+      <button class="handbook"><b>Handbook</b></button>
+    </a>
+    
+  </body>
+  <img id="graphs" src="graphs.png" alt="pattern">
+    <style>
+    #graphs {
+  position: fixed;
+  top: 100px;
+  right: -170px;
+  transform: scale(50%);
+  border-radius: 40px;
+  border-style: solid;
+  border-width: 6px;
+  border-color: black;
+    }
+    </style>
 </html>
