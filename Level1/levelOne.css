@@ -10,10 +10,39 @@ body {
     position: relative;
     overflow: hidden;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
 .fullBody {
     position: absolute;
     height: 100vh;
     width: 100vw;
-    background-image: radial-gradient(circle, rgb(192, 21, 50), rgb(189, 13, 121), rgb(145, 11, 138),rgb(41, 4, 47) );
+    background-image: radial-gradient(circle,rgb(156, 126, 81),rgb(54, 44, 27));
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
+.mainMenu {
+    position: absolute;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(156, 126, 81);
+    border: solid black;
+    border-radius: 20px;
+}
+.missionReport {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(156, 126, 81);
+    width: 500px;
+    border: solid black;
+    border-radius: 20px;
+    color: rgb(30, 30, 30)
+}
+.missionTitle {
+    color: black;
+    
 }
