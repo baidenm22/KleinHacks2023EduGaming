@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="Info.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -15,14 +17,78 @@
 <button class="tablink" onclick="openPage('Differentials', this, 'rgb(156, 126, 81)')">Differentials</button>
 
 <div id="Limits" class="tabcontent">
-  <h3>Home</h3>
-  <p>Home is where the heart is..</p>
-  <button class="backbutt" onclick="history.back()">Go Back</button>
+  <h1>Limits</h1>
+  <p>Calculus is a branch of mathematics that deals with the study of change and motion. Limits are a 
+  fundamental concept in calculus and are used to define the behavior of functions as they approach values that might seem 'impossible'</p>  
+    
+  <p>In calculus, a limit is the value that a function approaches as its input (usually denoted by x) 
+    gets closer and closer to a particular value (usually denoted by a). This is denoted mathematically as:</p>
+    <p><center>$$\lim_{x \to a} f(x) = L$$</center></p>
+    <p>where f(x) is the function being evaluated, x is the input variable, a is the limit point, 
+      and L is the limit value.</p>
+<p>Limits play a crucial role in calculus, as they allow us to define important concepts such as continuity, differentiability, and 
+  integration. They also help us to understand the behavior of functions in a more precise manner, allowing us to make predictions and draw conclusions about their properties.</p>
+  <p>For example, consider the function f(x) = <sup>1</sup>&frasl;<sub>x</sub>. As x approaches 0, the function value becomes larger and larger in magnitude. We can say that the limit of f(x) as x approaches 0 is infinity, denoted as:</p>
+<p><center>$$\lim_{x \to 0} \frac{1}{x} = \infty$$</center></p>
+<p>This means that the function grows without bound as x approaches 0.</p>
+<h3>Practice Problem: Finding a Limit to Infinity</h3>
+<p>Let's practice a problem with a limit to infinity:</p>
+<p>Let's consider the function \(f(x) = \frac{3x^2 - 5x + 7}{2x^2 + 3x - 2}\) as x approaches infinity.</p>
+<p>To find the limit of the function as x approaches infinity, we need to evaluate the behavior of the function as x becomes very large. 
+  We can do this by dividing the numerator and denominator by the highest power of x in the function, which in this case is x<sup>2</sup>:</p>
+<p><center>$$f(x) = \frac{3x^2 - 5x + 7}{2x^2 + 3x - 2} = \frac{3 - \frac{5}{x} + \frac{7}{x^2}}{2 + \frac{3}{x} - \frac{2}{x^2}}$$</center></p>
+<p>As x becomes infinitely large, the terms  <sup>1</sup>&frasl;<sub>x</sub> and <sup>1</sup>&frasl;<sub>x<sup>2</sup></sub> becomes practically 0 as the denominator grows to infinity. This means that:</p>
+<p><center>$$\lim_{x \to \infty} f(x) = \frac{3+0+0}{2+0+0}$$</center></p>
+<p>Therefore, the limit of the function f(x) as x approaches infinity is <sup>3</sup>&frasl;<sub>2</sub>.</p>
+
+
+
+    <button class="backbutt" onclick="history.back()">Go Back</button>
 </div>
 
 <div id="Derivatives" class="tabcontent">
   <h3>News</h3>
-  <p>Some news this fine day!</p> 
+  <p>Derivatives are a fundamental concept in calculus and are used to study the rate at which functions change. In calculus, the derivative of a function represents its instantaneous rate of change at a given point.</p>
+<p>The derivative of a function <i>f(x)</i> at a point <i>x</i> is defined as:</p>
+<p style="text-align:center;"><i>$$f'(x) = \lim_{h\to 0} \frac{f(x+h)-f(x)}{h}$$
+</i></p>
+<p>where <i>h</i> is a very small value that approaches zero. The derivative represents the slope of the tangent line to the curve of the function at a given point. It can be used to find the maximum or minimum value of a function and to optimize various problems.</p>
+<h3>Finding the Derivative</h3>
+<p>To find the derivative of a function, we need to take the limit of the difference quotient as <i>h &rarr; 0</i>. Let's take a look at a few examples.</p>
+<h4>Example 1: Finding the Derivative of a Linear Function</h4>
+<p>Let's find the derivative of the function <i>f(x) = 2x + 1</i> at the point <i>x = 3</i>.</p>
+<p>First, we need to compute the difference quotient:</p>
+<p style="text-align:center;">$$\frac{f(x+h)-f(x)}{h} = \frac{(2(x+h)+1)-(2x+1)}{h} = \frac{2h}{h} = 2$$</p>
+<p>Next, we take the limit of the difference quotient as <i>h &rarr; 0</i>:</p>
+<p style="text-align:center;">f'(x) = lim[h &rarr; 0] [(f(x + h) - f(x))/h] = 2</p>
+<p>Therefore, the derivative of <i>f(x) = 2x + 1</i> at the point <i>x = 3</i> is <i>f'(3) = 2</i>.</p>
+<h4>Example 2: Finding the Derivative of a Quadratic Function</h4>
+<p>Let's find the derivative of the function <i>f(x) = x<sup>2</sup> - 3x + 2</i> at the point <i>x = 2</i>.</p>
+<p>First, we need to compute the difference quotient:</p>
+<p style="text-align:center;">(f(x + h) - f(x))/h = [((x + h)<sup>2</sup> - 3(x + h) + 2) - (x<sup>2</sup> - 3x + 2)]/h = (2xh + h<sup>2</sup> - 3h)/h = 2x - 3 + h</p>
+<p>Next, we take the limit of the difference quotient as <i>h &rarr; 0</i>:</p>
+<p style="text-align:center;">f'(x) = lim[h &rarr; 0] [(f(x + h) - f(x))/h] = 2x - 3</p>
+<p>Therefore, the derivative of <i>f(x) = x<sup>2</sup> - 3x + 2</i> at the point <i>x = 2</i> is <i>f'(2) = 1</i>.</p>
+<h3>Real-World Applications of Derivatives</h3>
+<p>Derivatives are used in many fields, including physics, engineering, economics, 
+  and finance, to analyze rates of change and optimize various problems. Here are some examples:</p>
+<h4>Example 1: Physics</h4>
+<p>In physics, derivatives are used to calculate velocity and acceleration. Velocity is the derivative 
+  of position with respect to time, and acceleration is the derivative of velocity with respect to time. For 
+  example, if we know the position function of an object, we can use derivatives to find its velocity and acceleration at any given time.</p>
+<h4>Example 2: Economics</h4>
+<p>In economics, derivatives are used to analyze the elasticity of demand for a product. Elasticity measures 
+  the responsiveness of the quantity demanded to changes in price. The price elasticity of demand is defined 
+  as the percentage change in quantity demanded divided by the percentage change in price. The derivative is 
+  used to calculate the elasticity, as it represents the rate of change of quantity demanded with respect to price.</p>
+<h4>Example 3: Finance</h4>
+<p>In finance, derivatives are used to manage risk and optimize investments. For example, options are financial
+   derivatives that give the buyer the right, but not the obligation, to buy or sell an underlying asset at a predetermined 
+   price at or before a specific date. The value of an option depends on the price of the underlying asset, the strike price, 
+   the time to expiration, and the volatility of the underlying asset. Derivatives are used to calculate the sensitivity of 
+   the option value to changes in these variables, which helps investors manage risk and optimize their investments.</p>
+<p>Derivatives are a powerful tool in calculus and are used to analyze rates of change and optimize various problems in many 
+  different fields. Understanding derivatives is essential for students of calculus and for professionals in fields that use calculus.</p>
   <button class="backbutt" onclick="history.back()">Go Back</button>
 
 </div>
