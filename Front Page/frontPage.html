@@ -58,6 +58,10 @@
                     <br><br> Agent, we sent you out to try to find this hidden treasure. We understand you may be new to this field of work,
                     but don't worry. If you ever need help just refer to our handbook for important tips!
                     <br><br>
+                    Once you solve all the puzzles you should get a code that will unlock the golden bell's location
+                    <br>
+                    <br>
+
                     Good luck out there,
                     <br> Calc. Hunters. 
 
@@ -65,11 +69,20 @@
             </div>
             
 
-            <div style="height:200px; justify-content: center; display: flex;">
-                <div><label>Your Answer</label>
-                    <br><input type="text" id="answerSpace"><br>
-                    <button type="button" id="answerButton" background-color: blanchedalmond;>Submit</button>
+            <div style="height:200px;padding: 20px; display: flex;background-color: gray;justify-content: center;">
+                <div><label style="font-size: 1.7vw;">Tablet's Encoded Message</label>
+                    <br><br>
+                    <div style="display:flex; ">
+                        <div> X C V F</div><div style="width:20px"></div> 
+                        <input type="text" id="answerSpace" style="background-color: gray;"><div style="width:20px"></div>
+                        <button type="button" id="answerButton" style="background-color: gray;"">Submit</button>
+                    </div>
+                    <br>
+
+                    <div id="Correct" style="font-size:1.4vw;color: green; display: none;">Correct</div>
+                    <div id="Incorrect" style="font-size:1.4vw;color: rgb(199, 15, 15);  display: none;">Incorrect</div>
                 </div>
+               
             </div>
         </div>
     </div>

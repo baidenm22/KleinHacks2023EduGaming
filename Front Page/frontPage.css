@@ -1,5 +1,5 @@
 body {
-    font-size: 18px;
+    font-size: 1.2vw;
     font-family:'Courier New', Courier, monospace;
     width: 100%;
     height: 100%;
@@ -39,7 +39,6 @@ a {
     
 }
 
-
 .popBox {
     top: -50px;
     left:60px;
@@ -55,7 +54,7 @@ a {
     transition: display 2s;
 }
 .popBoxTitle {
-    font-size: 24px;
+    font-size: 1.5vw;
     height: 25px;
     background-color: rgb(156, 126, 81);
     padding: 2px
@@ -74,12 +73,15 @@ a {
     border-width: 0px;
     border-style: solid;
     border-color: none;
-    
+    transition: background-color 0.5s;
     z-index: 100;
 }
 .levelOne:hover > .popBox{
     display: flex;
 } 
+.levelOne:hover {
+    background-color: rgba(195, 9, 6, 0.726);
+}
 
 .sand {
     z-index: 24;

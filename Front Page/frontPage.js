@@ -16,9 +16,12 @@ function randomLocation()
 document.getElementById("answerButton").onclick = function() {
 
     var answer = document.getElementById("answerSpace").value;
-    var answers = [20,30,40,50]
-    if(answer = answers[0])
+    if(answer == 30)
     {
-     console.log("success");   
+     document.getElementById("Correct").style.display = "block"; 
+     document.getElementById("Incorrect").style.display = "none";   
+    }  else {
+        document.getElementById("Correct").style.display = "none";   
+        document.getElementById("Incorrect").style.display = "block";   
     }
 }
