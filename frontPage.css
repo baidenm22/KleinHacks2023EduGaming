@@ -94,6 +94,13 @@ a {
     border-style: solid;
     animation: sandBlow 1s infinite linear;
 }
+.handbook{
+    border-radius: 10px;
+    position: absolute;
+        top: 20px;
+        left: 1000px;
+        z-index: 9999;
+}
 @keyframes sandBlow {
     0% {
         transform: translate(0,0);

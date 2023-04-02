@@ -1,9 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="levelOne.css">
-    <title>Scavenger Hunt</title>
+    <link rel="stylesheet" href="Info.css">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
 <body>
-    <div class="fullBody"></div>
-    <script src="levelOne.js"></script>
+
+<button class="tablink" onclick="openPage('Limits', this, 'rgb(156, 126, 81)')" id="defaultOpen">Limits</button>
+<button class="tablink" onclick="openPage('Derivatives', this, 'rgb(156, 126, 81)')" >Derivatives</button>
+<button class="tablink" onclick="openPage('Integrals', this, 'rgb(156, 126, 81)')">Integrals</button>
+<button class="tablink" onclick="openPage('Differentials', this, 'rgb(156, 126, 81)')">Differentials</button>
+
+<div id="Limits" class="tabcontent">
+  <h3>Home</h3>
+  <p>Home is where the heart is..</p>
+  <button class="backbutt" onclick="history.back()">Go Back</button>
+</div>
+
+<div id="Derivatives" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p> 
+  <button class="backbutt" onclick="history.back()">Go Back</button>
+
+</div>
+
+<div id="Integrals" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+  <button class="backbutt" onclick="history.back()">Go Back</button>
+
+</div>
+
+<div id="Differentials" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+  <button class="backbutt" onclick="history.back()">Go Back</button>
+
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+document.getElementById("defaultOpen").click(); 
+</script>
+   
 </body>
-</html>
+</html> 
