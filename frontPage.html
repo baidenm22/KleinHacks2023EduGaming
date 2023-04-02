@@ -75,17 +75,18 @@
                     <div style="display: flex; flex-direction: column; align-items: center;">
                         <div style="display:flex; ">
                           <div>ARTIFACT CODE:</div><div style="width:20px"></div> 
-                          <label for="inputField"></label>
-                          <input type="text" id="inputField">
-                          <button class="submit" onclick="checkString()">Submit</button>
-                        </div>
-                        <br>
-                        <div id="result"></div>
-                      </div>
+                          <form onsubmit="return checkString()">
+                            <label for="input-box"></label>
+                            <input type="text" id="input-box" name="input-box">
+                            <input class="submit"type="submit" value="Submit">
+                        </form>
                       
 
                     <div id="Correct" style="font-size:1.4vw;color: green; display: none;">Correct</div>
                     <div id="Incorrect" style="font-size:1.4vw;color: rgb(199, 15, 14);  display: none;">Incorrect</div>
+                    <div id="popup-message" style="display:none">
+                        <p>Input is correct!</p>
+                      </div>
                 </div>
                
             </div>

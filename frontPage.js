@@ -14,10 +14,13 @@ function randomLocation()
 }
 
 function checkString() {
-    const input = document.getElementById("inputField").value;
-    if (input === "CuS4CkdAG04T") {
-      document.getElementById("result").innerHTML = "Correct!";
-    } else {
-      document.getElementById("result").innerHTML = "Incorrect!";
-    }
+  var input = document.getElementById("input-box").value;
+  if (input === "CuS4CkdAG04T") {
+    alert("Congratulations, you've found the location of the golden bell!! We hope you've learned some calculus along the way and seen its uses!!");
+    return false;
+  } else {
+    alert("Incorrect :( maybe you typed it in the wrong order?");
+    return false;
   }
+}
+  //CuS4CkdAG04T

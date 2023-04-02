@@ -153,5 +153,23 @@ div[style="height:200px;padding: 20px; display: flex;background-color: gray;just
     border: 1px solid #ccc;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    scale: 113%
   }
-  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.popup.show {
+    visibility: visible;
+    opacity: 1;
+}
