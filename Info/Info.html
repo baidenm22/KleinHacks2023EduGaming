@@ -27,8 +27,10 @@
     <p>where f(x) is the function being evaluated, x is the input variable, a is the limit point, 
       and L is the limit value.</p>
 <p>Limits play a crucial role in calculus, as they allow us to define important concepts such as continuity, differentiability, and 
-  integration. They also help us to understand the behavior of functions in a more precise manner, allowing us to make predictions and draw conclusions about their properties.</p>
-  <p>For example, consider the function f(x) = <sup>1</sup>&frasl;<sub>x</sub>. As x approaches 0, the function value becomes larger and larger in magnitude. We can say that the limit of f(x) as x approaches 0 is infinity, denoted as:</p>
+  integration. They also help us to understand the behavior of functions in a more precise manner, allowing us to make predictions and 
+  draw conclusions about their properties.</p>
+  <p>For example, consider the function f(x) = <sup>1</sup>&frasl;<sub>x</sub>. As x approaches 0, the function value becomes larger and larger in 
+    magnitude. We can say that the limit of f(x) as x approaches 0 is infinity, denoted as:</p>
 <p><center>$$\lim_{x \to 0} \frac{1}{x} = \infty$$</center></p>
 <p>This means that the function grows without bound as x approaches 0.</p>
 <h3>Practice Problem: Finding a Limit to Infinity</h3>
@@ -37,7 +39,8 @@
 <p>To find the limit of the function as x approaches infinity, we need to evaluate the behavior of the function as x becomes very large. 
   We can do this by dividing the numerator and denominator by the highest power of x in the function, which in this case is x<sup>2</sup>:</p>
 <p><center>$$f(x) = \frac{3x^2 - 5x + 7}{2x^2 + 3x - 2} = \frac{3 - \frac{5}{x} + \frac{7}{x^2}}{2 + \frac{3}{x} - \frac{2}{x^2}}$$</center></p>
-<p>As x becomes infinitely large, the terms  <sup>1</sup>&frasl;<sub>x</sub> and <sup>1</sup>&frasl;<sub>x<sup>2</sup></sub> becomes practically 0 as the denominator grows to infinity. This means that:</p>
+<p>As x becomes infinitely large, the terms  <sup>1</sup>&frasl;<sub>x</sub> and <sup>1</sup>&frasl;<sub>x<sup>2</sup></sub> becomes practically 0 as 
+  the denominator grows to infinity. This means that:</p>
 <p><center>$$\lim_{x \to \infty} f(x) = \frac{3+0+0}{2+0+0}$$</center></p>
 <p>Therefore, the limit of the function f(x) as x approaches infinity is <sup>3</sup>&frasl;<sub>2</sub>.</p>
 
@@ -48,11 +51,13 @@
 
 <div id="Derivatives" class="tabcontent">
   <h1>Derivatives</h1>
-  <p>Derivatives are a fundamental concept in calculus and are used to study the rate at which functions change. In calculus, the derivative of a function represents its instantaneous rate of change at a given point.</p>
+  <p>Derivatives are a fundamental concept in calculus and are used to study the rate at which functions change. In calculus, the derivative of a 
+    function represents its instantaneous rate of change at a given point.</p>
 <p>The derivative of a function <i>f(x)</i> at a point <i>x</i> is defined as:</p>
 <p style="text-align:center;"><i>$$f'(x) = \lim_{h\to 0} \frac{f(x+h)-f(x)}{h}$$
 </i></p>
-<p>where <i>h</i> is a very small value that approaches zero. The derivative represents the slope of the tangent line to the curve of the function at a given point. It can be used to find the maximum or minimum value of a function and to optimize various problems.</p>
+<p>where <i>h</i> is a very small value that approaches zero. The derivative represents the slope of the tangent line to the curve of the function at a given 
+  point. It can be used to find the maximum or minimum value of a function and to optimize various problems.</p>
 <h3>Finding the Derivative</h3>
 <p>To find the derivative of a function, we need to take the limit of the difference quotient as <i>h &rarr; 0</i>. Let's take a look at a few examples.</p>
 <h4>Example 1: Finding the Derivative of a Linear Function</h4>
@@ -117,10 +122,12 @@
 
 <div id="Integrals" class="tabcontent">
   <h1>Integrals</h1>
-	<p>Integrals are one of the fundamental concepts in calculus, used to calculate the area under a curve or the total change of a function over an interval. In this article, we will explain what integrals are, how to find them, and their real-world applications.</p>
-	
+	<p>Integrals are one of the fundamental concepts in calculus, used to calculate the area under a curve or the total change of a function over an interval. In this article, we will explain what 
+    integrals are, how to find them, and their real-world applications.</p>
 	<h2>Definition of Integrals</h2>
-	<p>An integral is a mathematical concept that represents the area under a curve. To find the integral of a function f(x) over an interval [a,b], we divide the interval into many small sub-intervals of width Δx, and approximate the area of each sub-interval using a rectangle. By summing up all the areas of the rectangles, we obtain an estimate for the total area under the curve. As we make the width of the sub-intervals smaller and smaller, the estimate becomes more and more accurate, and approaches the exact value of the integral.</p>
+	<p>An integral is a mathematical concept that represents the area under a curve. To find the integral of a function f(x) over an interval [a,b], we divide the interval into many small sub-intervals of 
+    width Δx, and approximate the area of each sub-interval using a rectangle. By summing up all the areas of the rectangles, we obtain an estimate for the total area under the curve. As we make the width of 
+    the sub-intervals smaller and smaller, the estimate becomes more and more accurate, and approaches the exact value of the integral.</p>
 	<p>The symbol used to represent an integral is ∫, and the integral of a function f(x) over an interval [a,b] is denoted as:</p>
 	<p style="text-align: center;">∫<sub>a</sub><sup>b</sup> f(x) dx</p>
 	<p>The notation dx indicates the variable of integration, and represents the infinitesimal width of each sub-interval. The limits of integration, a and b, represent the starting and ending points of the interval over which we are integrating the function.</p>
@@ -173,10 +180,73 @@
 </div>
 
 <div id="Differentials" class="tabcontent">
-  <h3>About</h3>
-  <p>Who we are and what we do.</p>
-  <button class="backbutt" onclick="history.back()">Go Back</button>
+  <h1>Differentials</h1>
+  <h2>Differential Equations</h2>
+<p>Differential equations are equations that involve an unknown function and one or more of its derivatives. They are used to model a wide range of physical and natural phenomena, including motion, population growth, and the spread of disease.</p>
+<p>There are two main types of differential equations: ordinary differential equations and partial differential equations. Ordinary differential equations involve a single independent variable, while partial differential equations involve multiple independent variables.</p>
+<h3>Finding Solutions to Differential Equations</h3>
+<p>There are various techniques for finding solutions to differential equations, including:</p>
+<ol>
+	<li>Separation of variables: This technique involves separating the variables of the differential equation and integrating both sides. For example, consider the following differential equation:</li>
+  <p style="text-align: center;">$$ \frac{dy}{dx} = x^2 $$</p>
 
+<p>We can separate the variables as follows:</p>
+
+<p style="text-align: center;">$$ \frac{dy}{x^2} = dx $$</p>
+
+<p>Integrating both sides, we get:</p>
+
+<p style="text-align: center;">$$ y = \frac{x^3}{3} + C $$</p>
+
+<p>where C is the constant of integration.</p>
+
+<li>Integrating factors: This technique involves multiplying both sides of the differential equation by an integrating factor, which makes it possible to integrate both sides. For example, consider the following differential equation:</li>
+
+<p style="text-align: center;">$$ \frac{dy}{dx} + 2y = e^x $$</p>
+
+<p>Multiplying both sides by e<sup>2x</sup>, we get:</p>
+
+<p style="text-align: center;">$$ e^{2x} \frac{dy}{dx} + 2ye^{2x} = e^{3x} $$</p>
+
+<p>This equation can be rewritten as:</p>
+
+<p style="text-align: center;">$$ \frac{d}{dx}(y e^{2x}) = e^{3x} $$</p>
+
+<p>Integrating both sides, we get:</p>
+
+<p style="text-align: center;">$$ y = \frac{1}{2} e^{-2x} \left( e^{3x} + C \right) $$</p>
+
+<p>where C is the constant of integration.</p>
+</ol>
+<h3>Real-World Applications of Differential Equations</h3>
+<p>Differential equations are used to model a wide range of real-world phenomena, including:</p>
+<ul>
+	<li>Population growth: Differential equations can be used to model the growth of populations, taking into account factors such as birth rate, death rate, and migration.</li>
+  <li>Spread of disease: Differential equations can be used to model the spread of diseases, taking into account factors such as transmission rate and recovery rate.</li>
+
+<li>Motion: Differential equations can be used to model the motion of objects, taking into account factors such as velocity and acceleration.</li>
+
+<li>Circuit analysis: Differential equations can be used to model electrical circuits, taking into account factors such as voltage and current.</li>
+</ul>
+<h2>Solving a Differential Equation</h2>
+<p>Suppose we have the differential equation:</p>
+<p>$$\frac{dy}{dt} = ky$$</p>
+<p>We can solve this equation using separation of variables:</p>
+<p>$$\frac{dy}{y} = k \, dt$$</p>
+<p>Integrating both sides, we get:</p>
+<p>$$\ln|y| = kt + C_1$$</p>
+<p>where C<sub>1</sub> is the constant of integration. Solving for y, we get:</p>
+<p>$$y = \pm e^{kt + C_1}$$</p>
+<p>But we can simplify this by letting C = &plusmn;e<sup>C<sub>1</sub></sup>, so that:</p>
+<p>$$y = Ce^{kt}$$</p>
+<p>where C is a constant. So the general solution to the differential equation dy/dt = ky is y = Ce<sup>kt</sup>.</p>
+<p>Now, let's say that y = 2 when t = 0. We can use this initial condition to solve for C:</p>
+<p>$$y = Ce^{kt}$$</p>
+<p>When t = 0, y = 2:</p>
+<p>$$2 = Ce^{k \cdot 0} = C$$</p>
+<p>So the particular solution to the differential equation dy/dt = ky, given the initial condition y = 2 when t = 0, is:</p>
+<p>$$y = 2e^{kt}$$</p> 
+  <button class="backbutt" onclick="history.back()">Go Back</button>
 </div>
 
 <script>
@@ -196,6 +266,5 @@ function openPage(pageName,elmnt,color) {
 
 document.getElementById("defaultOpen").click(); 
 </script>
-   
 </body>
 </html> 
